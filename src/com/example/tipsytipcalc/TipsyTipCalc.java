@@ -2,6 +2,7 @@ package com.example.tipsytipcalc;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.graphics.Color;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -36,6 +37,7 @@ public class TipsyTipCalc extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipsy_tip_calc);
+        setTitleColor(Color.BLUE);
         
         if(savedInstanceState == null) {
         	bill = 0.0;
