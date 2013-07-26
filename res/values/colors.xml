@@ -1,10 +1,9 @@
 <resources>
-    <color name="title_bar_background_light_blue">#7DC9FF</color>
-    <color name="title_bar_text_light_blue">#7DC9FF</color>
-    
-    <color name="background_light_blue">#7DC9FF</color>
-    <color name="background_white">#FFFFFF</color>
+
+    <color name="button_text_light_blue">#7DC9FF</color>
+   
 
     <color name="buttons_blue">#3b5998</color>
+    
 
 </resources>
