@@ -1,4 +1,4 @@
-package com.example.tipsytipcalc;
+package com.feinland.tipsytipcalc;
 
 import android.os.Bundle;
 import android.app.Activity;
