@@ -100,34 +100,33 @@
         android:textColor="@color/buttons_blue" />
 
     <Button
+        android:id="@+id/increaseTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/totalEditText"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginRight="39dp"
+        android:background="@color/buttons_blue"
+        android:text="@string/increase_tip_button"
+        android:textColor="@color/button_text_light_blue" />
+
+    <Button
         android:id="@+id/decreaseTipButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/increaseTipButton"
-        android:layout_alignTop="@+id/totalEditText"
+        android:layout_below="@+id/totalTextView"
         android:background="@color/buttons_blue"
         android:text="@string/decrease_tip_button"
-        android:textColor="@color/button_text_light_blue" />
-
-    <Button
-        android:id="@+id/increaseTipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/changeTipButtonsTextView"
-        android:layout_alignLeft="@+id/tipAmountEditText"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="53dp"
-        android:background="@color/buttons_blue"
-        android:text="@string/increase_tip_button"
         android:textColor="@color/button_text_light_blue" />
 
     <TextView
         android:id="@+id/changeTipButtonsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/decreaseTipButton"
-        android:layout_marginBottom="10dp"
-        android:layout_toLeftOf="@+id/decreaseTipButton"
+        android:layout_alignLeft="@+id/increaseTipButton"
+        android:layout_below="@+id/increaseTipButton"
         android:text="@string/change_tip_text_view"
         android:textColor="@color/buttons_blue"
         android:textSize="12sp"
