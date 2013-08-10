@@ -70,45 +70,6 @@
         android:text="@string/equals_sign_text_view"
         android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/totalTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tipPercentTextView"
-        android:layout_below="@+id/increaseTipButton"
-        android:layout_marginTop="73dp"
-        android:background="@drawable/total_border"
-        android:text="@string/total_text_view"
-        android:textColor="@color/buttons_blue"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/decreaseTipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/increaseTipButton"
-        android:layout_below="@+id/increaseTipButton"
-        android:layout_marginTop="30dp"
-        android:background="@color/buttons_blue"
-        android:minHeight="60dp"
-        android:minWidth="76dp"
-        android:text="@string/decrease_tip_button"
-        android:textColor="@color/button_text_light_blue"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/changeTipButtonsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/increaseTipButton"
-        android:layout_marginLeft="32dp"
-        android:layout_toRightOf="@+id/increaseTipButton"
-        android:text="@string/change_tip_text_view"
-        android:textColor="@color/buttons_blue"
-        android:textSize="15sp"
-        android:textStyle="bold|italic" />
-
     <EditText
         android:id="@+id/tipAmountEditText"
         android:layout_width="wrap_content"
@@ -122,21 +83,6 @@
         android:text="@string/tip_amount_edit_text"
         android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/increaseTipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tipAmountEditText"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/tipAmountEditText"
-        android:background="@color/buttons_blue"
-        android:minHeight="60dp"
-        android:minWidth="76dp"
-        android:text="@string/increase_tip_button"
-        android:textColor="@color/button_text_light_blue"
-        android:textSize="25sp" />
-
     <EditText
         android:id="@+id/totalEditText"
         android:layout_width="wrap_content"
@@ -148,6 +94,58 @@
         android:ems="3"
         android:inputType="numberDecimal"
         android:text="@string/total_text_edit"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipPercentTextView"
+        android:layout_below="@+id/tipPercentEditText"
+        android:layout_marginTop="81dp"
+        android:background="@drawable/total_border"
+        android:text="@string/total_text_view"
+        android:textColor="@color/buttons_blue"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/changeTipButtonsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/totalEditText"
+        android:layout_alignLeft="@+id/decreaseTipButton"
+        android:layout_marginBottom="29dp"
+        android:text="@string/change_tip_text_view"
+        android:textColor="@color/buttons_blue"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/decreaseTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/totalEditText"
+        android:layout_alignLeft="@+id/increaseTipButton"
+        android:background="@color/buttons_blue"
+        android:minHeight="60dp"
+        android:minWidth="76dp"
+        android:text="@string/decrease_tip_button"
+        android:textColor="@color/button_text_light_blue"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/increaseTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tipAmountEditText"
+        android:layout_marginRight="30dp"
+        android:background="@color/buttons_blue"
+        android:minHeight="60dp"
+        android:minWidth="76dp"
+        android:text="@string/increase_tip_button"
+        android:textColor="@color/button_text_light_blue"
         android:textSize="25sp" />
 
 </RelativeLayout>

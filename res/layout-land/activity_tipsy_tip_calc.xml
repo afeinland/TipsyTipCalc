@@ -100,34 +100,32 @@
         android:textColor="@color/buttons_blue" />
 
     <Button
-        android:id="@+id/decreaseTipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/increaseTipButton"
-        android:layout_alignBottom="@+id/increaseTipButton"
-        android:layout_marginLeft="19dp"
-        android:layout_toRightOf="@+id/increaseTipButton"
-        android:background="@color/buttons_blue"
-        android:text="@string/decrease_tip_button"
-        android:textColor="@color/button_text_light_blue" />
-
-    <Button
         android:id="@+id/increaseTipButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/billTextView"
-        android:layout_marginLeft="78dp"
-        android:layout_toRightOf="@+id/tipAmountEditText"
+        android:layout_alignLeft="@+id/decreaseTipButton"
+        android:layout_alignTop="@+id/billEditText"
         android:background="@color/buttons_blue"
         android:text="@string/increase_tip_button"
+        android:textColor="@color/button_text_light_blue" />
+
+    <Button
+        android:id="@+id/decreaseTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
+        android:background="@color/buttons_blue"
+        android:text="@string/decrease_tip_button"
         android:textColor="@color/button_text_light_blue" />
 
     <TextView
         android:id="@+id/changeTipButtonsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/equalsSignTextView"
-        android:layout_toRightOf="@+id/increaseTipButton"
+        android:layout_alignBottom="@+id/tipAmountEditText"
+        android:layout_alignRight="@+id/increaseTipButton"
         android:text="@string/change_tip_text_view"
         android:textColor="@color/buttons_blue"
         android:textStyle="bold|italic" />
