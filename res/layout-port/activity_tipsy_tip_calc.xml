@@ -16,7 +16,7 @@
         android:layout_alignBaseline="@+id/totalTextView"
         android:layout_alignBottom="@+id/totalTextView"
         android:layout_toRightOf="@+id/totalTextView"
-        android:ems="3"
+        android:ems="4"
         android:inputType="numberDecimal"
         android:text="@string/total_text_edit" />
 
@@ -38,7 +38,7 @@
         android:layout_alignBaseline="@+id/billTextView"
         android:layout_alignBottom="@+id/billTextView"
         android:layout_alignLeft="@+id/totalEditText"
-        android:ems="3"
+        android:ems="4"
         android:inputType="numberDecimal"
         android:text="@string/bill_text_edit" />
 
@@ -61,7 +61,7 @@
         android:layout_alignBaseline="@+id/tipPercentTextView"
         android:layout_alignBottom="@+id/tipPercentTextView"
         android:layout_toRightOf="@+id/totalTextView"
-        android:ems="3"
+        android:ems="4"
         android:inputType="numberDecimal"
         android:text="@string/tip_percent_text_edit" />
 
@@ -83,7 +83,7 @@
         android:layout_alignBottom="@+id/equalsSignTextView"
         android:layout_marginLeft="33dp"
         android:layout_toRightOf="@+id/equalsSignTextView"
-        android:ems="3"
+        android:ems="4"
         android:inputType="numberDecimal"
         android:text="@string/tip_amount_edit_text" />
 
