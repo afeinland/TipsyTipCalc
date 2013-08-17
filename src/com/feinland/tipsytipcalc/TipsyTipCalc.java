@@ -87,8 +87,7 @@ public class TipsyTipCalc extends Activity {
 				int arg3) {
 			try {
 				bill = Double.parseDouble(arg0.toString());
-			}
-			catch(NumberFormatException e) {
+			} catch(NumberFormatException e) {
 				bill = 0.0;				
 			}
 			
@@ -116,8 +115,7 @@ public class TipsyTipCalc extends Activity {
 				int arg3) {
 			try {
 				tipPercent = Double.parseDouble(arg0.toString());
-			}
-			catch(NumberFormatException e) {
+			} catch(NumberFormatException e) {
 				tipPercent = 0.0;				
 			}
 			
@@ -128,7 +126,13 @@ public class TipsyTipCalc extends Activity {
     
     
     private void updateTipAndFinalBill() {
-    	double tipPercent = Double.parseDouble(tipPercentET.getText().toString());
+    	double tipPercent;
+    	try {
+    		tipPercent = Double.parseDouble(tipPercentET.getText().toString());
+    	} catch (NumberFormatException e) {
+    		tipPercent = 0.0;
+    	}
+    	
     	double tipAmount = bill * tipPercent;
     	double total = bill + tipAmount;
     	
@@ -150,7 +154,12 @@ public class TipsyTipCalc extends Activity {
     	increaseTipButton.setOnClickListener(new OnClickListener(){
     		
     		public void onClick(View arg0) {
-    			double oldTipPercent = Double.parseDouble(tipPercentET.getText().toString());
+    			double oldTipPercent;
+    			try {
+    				oldTipPercent = Double.parseDouble(tipPercentET.getText().toString());
+    			} catch(NumberFormatException e) {
+    				oldTipPercent = 0.0;
+    			}
 				double newTipPercent = oldTipPercent + 0.01;
 				
 				tipPercentET.setText(String.format("%.02f", newTipPercent));
@@ -165,7 +174,12 @@ public class TipsyTipCalc extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-				double oldTipPercent = Double.parseDouble(tipPercentET.getText().toString());
+				double oldTipPercent;
+    			try {
+    				oldTipPercent = Double.parseDouble(tipPercentET.getText().toString());
+    			} catch(NumberFormatException e) {
+    				oldTipPercent = 0.0;
+    			}
 				double newTipPercent = oldTipPercent - 0.01;
 				
 				tipPercentET.setText(String.format("%.02f", newTipPercent));
